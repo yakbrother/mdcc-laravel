@@ -24,6 +24,18 @@ Route::get('/join', function () {
     return Inertia::render('Join');
 });
 
+Route::get('/about', function () {
+    return Inertia::render('About');
+});
+
+Route::get('/contact', function () {
+    return Inertia::render('Contact');
+});
+
+Route::get('/blog', function () {
+    return Inertia::render('Blog');
+});
+
 Route::get('/dashboard', function () {
     return Inertia::render('Dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');

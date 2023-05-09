@@ -2,13 +2,48 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-    background: #edc0bf;
+@layer components {
+
+    h1 {
+        @apply font-bold leading-tight text-gray-900 text-3xl;
+    }
+
+    h2 {
+        @apply font-bold leading-tight text-gray-900 text-2xl;
+    }
+
+    h3 {
+        @apply font-bold leading-tight text-gray-900 text-xl;
+    }
+
+    header a {
+        @apply text-gray-800 py-2 px-6;
+    }
+
+    header a.active,
+    header a:hover {
+        @apply bg-blue-500 text-white rounded-full;
+    }
+}
+
+html {
+    min-height: 100%;
+    background: #ffecd2;
     /* background: linear-gradient(90deg, #3edc0bf 0, #c4caef 58%); */
-    background-image: linear-gradient(to left top, #ffecd2 0%, #fcb69f 58%);
+    background-image: linear-gradient(to left top, #ffecd2 0%, #fcb69f 99%);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+body {
     padding: 4.5rem;
+    line-height: 1.5em;
     margin: 0;
-    font-family: 'Karla', sans-serif;
+
+}
+
+.font-sans {
+    font-family: 'Karla', Figtree, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
 h1,
@@ -18,6 +53,14 @@ h4,
 h5,
 h6 {
     font-family: 'Merriweather', serif;
-    font-weight: 700;
-    letter-spacing: .3em;
+    letter-spacing: .1em;
+}
+
+p {
+    font-size: 120%;
+    margin-top: 1em;
+}
+
+container {
+    max-width: 900px;
 }

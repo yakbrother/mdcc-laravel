@@ -5,13 +5,11 @@ import MdccLayout from "../Layouts/MdccLayout.vue";
 <template>
     <MdccLayout>
         <article>
-            <h2>Join</h2>
+            <h2>About</h2>
             <p>
-                One of us! One of us!!!
+                List of people....
             </p>
         </article>
 
     </MdccLayout>
 </template>
-
-
