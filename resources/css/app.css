@@ -4,7 +4,8 @@
 
 body {
     background: #edc0bf;
-    background: linear-gradient(90deg, #3edc0bf 0, #c4caef 58%);
+    /* background: linear-gradient(90deg, #3edc0bf 0, #c4caef 58%); */
+    background-image: linear-gradient(to left top, #ffecd2 0%, #fcb69f 58%);
     padding: 4.5rem;
     margin: 0;
     font-family: 'Karla', sans-serif;
