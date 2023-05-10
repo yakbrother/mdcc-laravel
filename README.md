@@ -10,3 +10,9 @@ Run a maker in tinker to populate the blog:
 ```
 \App\Models\BlogPost::factory()->times(10)->create();
 ```
+
+## Roadmap
+ [] Create dashboard for blog posts
+ [] Add event system and calendar
+ [] Play more with Vue transitions and animations
+ [] Wrap in Docker
