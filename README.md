@@ -4,10 +4,10 @@ This is just a sample site for playing with Laravel packages. All the text is fr
 
 Built with Laravel, Vue.js, and Inertia.js to create a Single Page Application (SPA).
 
-Run a maker in tinker to populate the blog:
+Run the seeder to populate the blog:
 
 ```
-\App\Models\BlogPost::factory()->times(10)->create();
+php artisan migrate:fresh --seed
 ```
 
 ## Roadmap
