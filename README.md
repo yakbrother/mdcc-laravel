@@ -1,9 +1,8 @@
-# mdcc-laravel
- Marx Dormoy Chess Club site on Laravel
+# Marx Dormoy Chess Club fake site
 
 This is just a sample site for playing with Laravel packages. All the text is from Chat GPT and is completely fake (although I do live in the Marx Dormoy neighborhood and love chess).
 
-Built with Laravel, Vue.js, and Inertia.js.
+Built with Laravel, Vue.js, and Inertia.js to create a Single Page Application (SPA).
 
 Run a maker in tinker to populate the blog:
 
