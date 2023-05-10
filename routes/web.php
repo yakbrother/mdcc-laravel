@@ -1,20 +1,10 @@
 <?php
 
 use App\Http\Controllers\ProfileController;
+use App\Models\BlogPost;
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
-
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider within a group which
-| contains the "web" middleware group. Now create something great!
-|
-*/
 
 Route::get('/', function () {
     return Inertia::render('Welcome');
@@ -33,8 +23,18 @@ Route::get('/contact', function () {
 });
 
 Route::get('/blog', function () {
-    return Inertia::render('Blog');
+    return Inertia::render('Blog', [
+        'blog_posts' => BlogPost::latest()->get()
+    ]);
 });
+
+Route::get('/blog/{blog_post:id}', function (BlogPost $blog_post) {
+    return Inertia::render('ShowBlogPost', [
+        'blog_post' => $blog_post
+    ]);
+})->name('blog_post.show');
+
+
 
 Route::get('/dashboard', function () {
     return Inertia::render('Dashboard');
