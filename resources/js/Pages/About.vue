@@ -63,8 +63,9 @@ import MdccLayout from "../Layouts/MdccLayout.vue";
                     </h3>
                     <div class="role">Event Organizer</div>
                     <p class="desc">
-                        Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh,
-                        viverra non, semper suscipit, posuere a, pede.
+                        A part-time superhero who fights crime in his spare time. His superpower is the ability to make
+                        people yawn uncontrollably, which he uses to subdue villains and put them to sleep. When he's not
+                        saving the world, he enjoys knitting and baking elaborate cakes.
                     </p>
                 </div>
             </div>
