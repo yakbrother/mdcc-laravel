@@ -4,11 +4,20 @@ import { Link } from '@inertiajs/vue3'
 
 <template>
     <container>
-        <header class="flex max-w-4xl align-baseline m-auto items-center" role="banner">
-            <h1 class="flex-grow text-2xl text-uppercase">Marx Dormoy Chess Club</h1>
+
+        <div id="sticky" class="sticky top-0 bg-gray-800 text-[#fcb69f] p-4">
+            <p class="m-0 text-center text-sm font-bold">This site is entirely fake, created just for playing with
+                Laravel plugins.
+            </p>
+        </div>
+
+        <header class="flex mt-24 mb-12 pb-6 border-gray-800 border-b max-w-4xl align-center m-auto items-center"
+            role="banner">
+            <img id="mdcc-logo" class="flex-grow mr-24" src="/img/mdcc-logo.png" alt="Marx Dormoy Chess Club"
+                title="Marx Dormoy Chess Club" />
 
             <nav class="flex justify-end" role="navigation">
-                <ul class="flex flex-wrap mb-6 text-gray-900">
+                <ul class="flex mb-6 text-gray-900">
                     <li>
                         <Link href="/">Home</Link>
                     </li>
@@ -20,9 +29,6 @@ import { Link } from '@inertiajs/vue3'
                     </li>
                     <li>
                         <Link href="/join" :class="{ 'active': $page.component === 'Join' }">Join</Link>
-                    </li>
-                    <li>
-                        <Link href="/contact" :class="{ 'active': $page.component === 'Contact' }">Contact</Link>
                     </li>
                 </ul>
             </nav>
@@ -52,9 +58,6 @@ import { Link } from '@inertiajs/vue3'
                         </li>
                         <li>
                             <Link href="/join" :class="{ 'active': $page.component === 'Join' }">Join</Link>
-                        </li>
-                        <li>
-                            <Link href="/contact" :class="{ 'active': $page.component === 'Contact' }">Contact</Link>
                         </li>
                     </ul>
                 </nav>
