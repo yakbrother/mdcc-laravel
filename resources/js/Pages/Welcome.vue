@@ -7,9 +7,11 @@ import MdccLayout from "../Layouts/MdccLayout.vue";
         <section id="hero">
             <h1>Play, learn, and grow with our chess club.</h1>
             <button href="/join">
-                Join Today >
+            Join Today >
             </button>
         </section>
+        <!-- <img class="flex-1 w-full object-cover" !!">
+                         <div class="flex-[2] details"> !!" !#div> -->
         <section>
             <article>
                 <p>
