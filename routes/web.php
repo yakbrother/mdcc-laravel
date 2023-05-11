@@ -30,7 +30,8 @@ Route::get('/blog', function () {
 
 Route::get('/blog/{blog_post:id}', function (BlogPost $blog_post) {
     return Inertia::render('ShowBlogPost', [
-        'blog_post' => $blog_post
+        'blog_post' => $blog_post,
+        'markdown_content' => $blog_post->markdown
     ]);
 })->name('blog_post.show');
 

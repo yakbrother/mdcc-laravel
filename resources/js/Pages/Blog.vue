@@ -21,7 +21,7 @@ defineProps({
                     blog_post.excerpt }}</p>
 
                 <Link :href="route('blog_post.show', blog_post.id)"
-                    class="text-indigo-600 hover:text-indigo-800 w-fit self-end font-semibold">
+                    class="pl-12 text-gray-600 hover:text-gray-800 underline text-right w-fit font-semibold">
                 Read more
                 </Link>
             </section>

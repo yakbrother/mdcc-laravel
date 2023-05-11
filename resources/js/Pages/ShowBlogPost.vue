@@ -1,9 +1,9 @@
 <script setup>
 import MdccLayout from "../Layouts/MdccLayout.vue";
-import ReactMarkdown from 'react-markdown';
 
 defineProps({
     blog_post: Object,
+    markdown_content: String,
 });
 </script>
 
@@ -13,9 +13,8 @@ defineProps({
             <h2>Blog</h2>
 
             <h3 class="text-xl font-semibold mb-10">{{ blog_post.title }}</h3>
-            <p>
-                <ReactMarkdown source={blog_post.body} />
-            </p>
+            <div v-html="markdown_content">
+            </div>
         </article>
 
     </MdccLayout>

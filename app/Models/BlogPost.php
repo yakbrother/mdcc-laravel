@@ -2,6 +2,7 @@
 
 namespace App\Models;
 
+use Parsedown;
 use App\Models\User;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
@@ -20,5 +21,12 @@ class BlogPost extends Model
     public function user(): BelongsTo
     {
         return $this->belongsTo(User::class);
+    }
+
+    public function getMarkdownAttribute(): string
+    {
+        $Parsedown = new Parsedown();
+
+        return $Parsedown->text($this->body);
     }
 }
