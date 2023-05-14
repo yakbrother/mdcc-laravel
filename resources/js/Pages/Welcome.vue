@@ -4,40 +4,34 @@ import MdccLayout from "../Layouts/MdccLayout.vue";
 
 <template>
     <MdccLayout>
-        <section
-            class="relative bg-[url(https://images.unsplash.com/photo-1604014237800-1c9102c219da?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80)] bg-cover bg-center bg-no-repeat">
-            <div
-                class="absolute inset-0 bg-white/75 sm:bg-transparent sm:from-white/95 sm:to-white/25 ltr:sm:bg-gradient-to-r rtl:sm:bg-gradient-to-l">
+        <section class="max-h-[400px] relative bg-[url(/img/chess-background.jpg)] bg-cover bg-center bg-no-repeat p-12">
+
+            <div id="hero-content">
+                <h1 class="text-2xl font-extrabold text-[#fcb69f] leading-4 sm:text-5xl">
+                    Play, learn, and grow
+
+                    <strong class="pl-12 block font-extrabold text-[#ffecd2]">
+                        with our chess club.
+                    </strong>
+                </h1>
+
+                <p class="mt-4 max-w-lg sm:text-xl/relaxed text-[#ffecd2]">
+                    Whether you are a seasoned player or just starting out, our club provides a welcoming and friendly
+                    environment!
+                </p>
+
+
             </div>
+            <div class="shadow-md mt-[1em] ml-[1em] flex flex-wrap gap-4 text-center">
+                <a href="#"
+                    class="block w-full rounded bg-gradient-to-bl from-[#ffecd2] to-[#fcb69f] px-12 py-3 text-sm font-medium font-bold shadow hover:bg-rose-700 focus:outline-none focus:ring sm:w-auto">
+                    Join
+                </a>
 
-            <div class="relative mx-auto max-w-screen-xl px-4 py-32 sm:px-6 lg:flex lg:h-screen lg:items-center lg:px-8">
-                <div class="max-w-xl text-center ltr:sm:text-left rtl:sm:text-right">
-                    <h1 class="text-3xl font-extrabold sm:text-5xl">
-                        Play, learn, and grow
-
-                        <strong class="block font-extrabold text-rose-700">
-                            with our chess club.
-                        </strong>
-                    </h1>
-
-                    <p class="mt-4 max-w-lg sm:text-xl/relaxed">
-                        Whether you are a seasoned player or just starting out, our club provides a welcoming and friendly
-                        environment where you can hone your skills, meet fellow chess lovers, and participate in exciting
-                        tournaments and events!
-                    </p>
-
-                    <div class="mt-8 flex flex-wrap gap-4 text-center">
-                        <a href="#"
-                            class="block w-full rounded bg-rose-600 px-12 py-3 text-sm font-medium text-white shadow hover:bg-rose-700 focus:outline-none focus:ring active:bg-rose-500 sm:w-auto">
-                            Join
-                        </a>
-
-                        <a href="#"
-                            class="block w-full rounded bg-white px-12 py-3 text-sm font-medium text-rose-600 shadow hover:text-rose-700 focus:outline-none focus:ring active:text-rose-500 sm:w-auto">
-                            Read our Blog
-                        </a>
-                    </div>
-                </div>
+                <a href="#"
+                    class="shadow-md block w-full rounded bg-gradient-to-bl from-white to-gray-400 px-12 py-3 text-sm font-medium shadow hover:text-rose-700 focus:outline-none focus:ring sm:w-auto">
+                    Read our Blog
+                </a>
             </div>
         </section>
         <section>

@@ -5,7 +5,6 @@ import MdccLayout from "../Layouts/MdccLayout.vue";
 <template>
     <MdccLayout>
         <article>
-            <h2>About</h2>
             <p class="text-xl">
                 Meet the people who made our chess club possible.
             </p>
